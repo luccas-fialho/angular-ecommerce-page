@@ -1,0 +1,7 @@
+<div class="container_home">
+  <app-menu (menuClicked)="onOpen()"></app-menu>
+  <app-cart *ngIf="false"></app-cart>
+  <app-side-bar (closeClicked)="onClose()" *ngIf="opened"></app-side-bar>
+  <app-product-imgs></app-product-imgs>
+  <app-product-infos></app-product-infos>
+</div>

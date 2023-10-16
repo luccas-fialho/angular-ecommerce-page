@@ -1,0 +1,29 @@
+.container_products-img {
+  min-width: 375px;
+  position: relative;
+}
+
+.container_products-img > img {
+  min-width: 375px;
+  width: 100%;
+}
+
+.circle_btn {
+  position: absolute;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  top: 45%;
+  cursor: pointer;
+}
+
+.previous_button {
+  padding-right: 0.2rem;
+  left: 20px;
+}
+
+.next_button {
+  padding-left: 0.2rem;
+  right: 20px;
+}
+

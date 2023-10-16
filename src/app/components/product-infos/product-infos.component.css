@@ -1,0 +1,95 @@
+.container_product-infos {
+  padding: 1.5rem;
+  min-width: 375px;
+}
+
+.company {
+  color: hsl(26, 100%, 55%);
+  font-weight: bold;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+}
+
+.product_title {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.product_desc {
+  margin-top: 1rem;
+  color: hsl(219, 9%, 45%);
+  line-height: 1.5rem;
+  text-wrap: pretty;
+}
+
+.container_pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.discount {
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 6rem;
+}
+
+.price_without_discount {
+  font-weight: bold;
+  color: hsl(220, 14%, 75%);
+  text-decoration-line: line-through;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: hsl(223, 64%, 98%);
+}
+
+.quantity > button {
+  padding: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.quantity > p {
+  font-weight: 700;
+}
+
+.add_to_cart {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  border-radius: 10px;
+  background-color: hsl(26, 100%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_to_cart > svg {
+  margin-right: 1rem;
+}
+
+.add_to_cart > svg > path {
+  fill: #FFFFFF;
+}
+
+.add_to_cart > span {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}

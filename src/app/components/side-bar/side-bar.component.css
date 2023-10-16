@@ -1,0 +1,39 @@
+.sidebar {
+  position: fixed;
+  width: 100%;
+  min-width: 375px;
+  top: 0;
+  z-index: 99999;
+}
+
+.container_side-bar {
+  height: 100vh;
+  width: 66.6%;
+  padding: 1.5rem;
+  position: absolute;
+  top: 0;
+  background-color: white;
+}
+
+.delete_btn {
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.menu > li {
+  margin-bottom: 1.5rem;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.test {
+  height: 100vh;
+  width: 33.3%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75)
+}
