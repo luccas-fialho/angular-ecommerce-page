@@ -2,25 +2,37 @@
   <div class="container_title">
     <p class="cart_title">Cart</p>
   </div>
-  <div class="item_info">
-    <div class="item_img">
-      <img src="../../../assets/images/image-product-1-thumbnail.jpg" alt="">
+  <div class="itens" *ngIf="false; else emptyCart">
+    <div class="item_info">
+      <div class="item_img">
+        <img
+          src="../../../assets/images/image-product-1-thumbnail.jpg"
+          alt=""
+        />
+      </div>
+      <div class="cart_body">
+        <div class="item_desc">
+          <p class="item_name">Fall Limited Edition Sneakers</p>
+          <p>
+            <span class="price">$125.00 x</span>
+            <span class="quantity"> 3</span>
+            <span class="total"> $375.00</span>
+          </p>
+        </div>
+        <div>
+          <button class="delete_btn">
+            <img src="../../../assets/images/icon-delete.svg" alt="" />
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="item_desc">
-      <p class="item_name">Fall Limited Edition Sneakers</p>
-      <p>
-        <span class="price">$125.00 x</span>
-        <span class="quantity"> 3</span>
-        <span class="total"> $375.00</span>
-      </p>
-    </div>
-    <div>
-      <button class="delete_btn">
-        <img src="../../../assets/images/icon-delete.svg" alt="">
-      </button>
+    <div class="checkout">
+      <button class="checkout_btn">Checkout</button>
     </div>
   </div>
-  <div class="checkout">
-    <button class="checkout_btn">Checkout</button>
-  </div>
+  <ng-template #emptyCart>
+    <div class="container_empty-cart">
+      <p>Your cart is empty.</p>
+    </div>
+  </ng-template>
 </div>

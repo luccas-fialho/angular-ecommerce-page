@@ -10,16 +10,23 @@ export class MenuComponent implements OnInit {
   @Output() menuClicked = new EventEmitter<boolean>();
   didMenuClick:boolean = false;
 
+  @Output() cartClicked = new EventEmitter<boolean>();
+
+  toggleCart: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   openSidebar(e: boolean) {
-    console.log('clicou!', e);
-
     this.menuClicked.emit(e);
     this.didMenuClick = true;
+  }
+
+  openCart(e: boolean) {
+    this.cartClicked.emit(e);
+    this.toggleCart = !this.toggleCart;
   }
 
 }

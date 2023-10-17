@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   opened: boolean = false;
+  cartOpened: boolean = false;
 
   constructor() { }
 
@@ -20,6 +21,10 @@ export class HomeComponent implements OnInit {
 
   onClose() {
     this.opened = false;
+  }
+
+  onToggleCart() {
+    this.cartOpened = !this.cartOpened;
   }
 
 }

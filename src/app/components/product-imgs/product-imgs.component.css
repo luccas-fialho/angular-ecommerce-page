@@ -6,6 +6,8 @@
 .container_products-img > img {
   min-width: 375px;
   width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .circle_btn {
