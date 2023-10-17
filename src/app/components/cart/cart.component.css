@@ -5,7 +5,6 @@
   z-index: 9999;
   background-color: white;
   width: 350px;
-  height: 250px;
   margin: 0 auto;
   border-radius: 10px;
 }
@@ -21,6 +20,8 @@
 
 .itens {
   padding: 2rem 1.5rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart_body {
@@ -43,7 +44,8 @@
   border-radius: 5px;
 }
 
-.price, .quantity {
+.price,
+.quantity {
   color: hsl(219, 9%, 45%);
 }
 

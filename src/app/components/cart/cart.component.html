@@ -2,8 +2,8 @@
   <div class="container_title">
     <p class="cart_title">Cart</p>
   </div>
-  <div class="itens" *ngIf="false; else emptyCart">
-    <div class="item_info">
+  <div class="itens" *ngIf="cart.length > 0; else emptyCart">
+    <div class="item_info" *ngFor="let item of cart">
       <div class="item_img">
         <img
           src="../../../assets/images/image-product-1-thumbnail.jpg"
@@ -12,15 +12,21 @@
       </div>
       <div class="cart_body">
         <div class="item_desc">
-          <p class="item_name">Fall Limited Edition Sneakers</p>
+          <p class="item_name">{{ item.name }}</p>
           <p>
-            <span class="price">$125.00 x</span>
-            <span class="quantity"> 3</span>
-            <span class="total"> $375.00</span>
+            <span class="price"
+              >${{ item.price - item.price * item.discount }}.00 x</span
+            >
+            <span class="quantity"> {{ item.quantity }}</span>
+            <span class="total">
+              {{
+                (item.price - item.price * item.discount) * item.quantity
+              }}.00</span
+            >
           </p>
         </div>
         <div>
-          <button class="delete_btn">
+          <button class="delete_btn" (click)="removeItemFromCart()">
             <img src="../../../assets/images/icon-delete.svg" alt="" />
           </button>
         </div>

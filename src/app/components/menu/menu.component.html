@@ -1,16 +1,19 @@
 <div class="container_menu">
   <ul class="menu_items">
     <li class="menu_icon" (click)="openSidebar(true)">
-      <img src="../../../assets/images/icon-menu.svg" alt="menu icon">
+      <img src="../../../assets/images/icon-menu.svg" alt="menu icon" />
     </li>
     <li class="logo_icon">
-      <img src="../../../assets/images/logo.svg" alt="">
+      <img src="../../../assets/images/logo.svg" alt="" />
     </li>
     <li class="cart_icon" (click)="openCart(toggleCart)">
-      <img src="../../../assets/images/icon-cart.svg" alt="">
+      <img src="../../../assets/images/icon-cart.svg" alt="" />
+      <div class="cart_quantity" *ngIf="cart.length > 0">
+        <p>{{ cart[0].quantity }}</p>
+      </div>
     </li>
     <li class="avatar_icon">
-      <img src="../../../assets/images/image-avatar.png" alt="">
+      <img src="../../../assets/images/image-avatar.png" alt="" />
     </li>
   </ul>
 </div>

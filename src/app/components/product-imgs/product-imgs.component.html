@@ -1,9 +1,9 @@
 <div class="container_products-img">
-  <button class="circle_btn previous_button">
-    <img src="../../../assets/images/icon-previous.svg" alt="">
+  <button class="circle_btn previous_button" (click)="previousPhoto()">
+    <img src="../../../assets/images/icon-previous.svg" alt="" />
   </button>
-  <img src="../../../assets/images/image-product-1.jpg" alt="">
-  <button class="circle_btn next_button">
-    <img src="../../../assets/images/icon-next.svg" alt="">
+  <img src="../../..{{ productImages[imageIndex] }}" alt="" />
+  <button class="circle_btn next_button" (click)="nextPhoto()">
+    <img src="../../../assets/images/icon-next.svg" alt="" />
   </button>
 </div>
