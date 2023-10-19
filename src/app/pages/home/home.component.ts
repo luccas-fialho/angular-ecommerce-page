@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   opened: boolean = false;
   cartOpened: boolean = false;
+  modalImagesOpen: boolean = false;
 
   constructor() {}
 
@@ -23,5 +24,13 @@ export class HomeComponent implements OnInit {
 
   onToggleCart() {
     this.cartOpened = !this.cartOpened;
+  }
+
+  onOpenImagesModal() {
+    this.modalImagesOpen = true;
+  }
+
+  onModalClosed() {
+    this.modalImagesOpen = false;
   }
 }

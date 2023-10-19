@@ -85,3 +85,11 @@
 .container_empty-cart > p {
   font-weight: 700;
 }
+
+@media screen and (min-width: 1440px) {
+  .container_cart {
+    right: -900px;
+    top: -20px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}

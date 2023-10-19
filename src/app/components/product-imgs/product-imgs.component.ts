@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -9,6 +9,8 @@ import { ProductService } from 'src/app/services/product.service';
 export class ProductImgsComponent implements OnInit {
   productImages: string[];
   imageIndex: number = 0;
+
+  @Output() modalImageClicked = new EventEmitter<boolean>()
 
   constructor(private productService: ProductService) {
     this.productImages = productService.getImages();
@@ -24,5 +26,13 @@ export class ProductImgsComponent implements OnInit {
   previousPhoto() {
     if (this.imageIndex == 0) this.imageIndex = this.productImages.length - 1;
     else this.imageIndex--;
+  }
+
+  changeProductImage(index: number) {
+    this.imageIndex = index;
+  }
+
+  openImagesModal(e: boolean) {
+    this.modalImageClicked.emit(e);
   }
 }

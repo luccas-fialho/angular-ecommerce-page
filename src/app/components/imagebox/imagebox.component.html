@@ -1,0 +1,30 @@
+<div class="imagebox_container">
+  <div class="images">
+    <div class="close_button" (click)="closeModal(true)">
+      <img src="../../../assets/images/icon-close-white.svg" alt="">
+    </div>
+    <div class="main_image">
+      <button class="circle_btn previous_button" (click)="imageCarrousel('previous')">
+        <img src="../../../assets/images/icon-previous.svg" alt="" />
+      </button>
+      <img src="../../..{{ images[imageIndex] }}" alt="">
+      <button class="circle_btn next_button" (click)="imageCarrousel('next')">
+        <img src="../../../assets/images/icon-next.svg" alt="" />
+      </button>
+    </div>
+    <div class="secondary_images">
+      <div>
+        <img src="../../../assets/images/image-product-1-thumbnail.jpg" alt="first" (click)="selectedImage(0)">
+      </div>
+      <div>
+        <img src="../.././../assets/images/image-product-2-thumbnail.jpg" alt="second" (click)="selectedImage(1)">
+      </div>
+      <div>
+        <img src="../../../assets/images/image-product-3-thumbnail.jpg" alt="third" (click)="selectedImage(2)">
+      </div>
+      <div>
+        <img src="../../../assets/images/image-product-4-thumbnail.jpg" alt="fourth" (click)="selectedImage(3)">
+      </div>
+    </div>
+  </div>
+</div>

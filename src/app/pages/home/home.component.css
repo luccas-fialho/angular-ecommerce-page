@@ -5,3 +5,13 @@
 .container {
   position: relative;
 }
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 0 200px;
+    display: flex;
+    align-items: flex-start;
+    padding: 7rem 2rem 0 2rem;
+    justify-content: space-between;
+  }
+}

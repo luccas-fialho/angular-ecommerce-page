@@ -6,6 +6,15 @@
     <li class="logo_icon">
       <img src="../../../assets/images/logo.svg" alt="" />
     </li>
+    <li class="menu_items__desktop">
+      <div class="menu_items__container">
+        <p><a href="">Collections</a></p>
+        <p><a href="">Men</a></p>
+        <p><a href="">Women</a></p>
+        <p><a href="">About</a></p>
+        <p><a href="">Contact</a></p>
+      </div>
+    </li>
     <li class="cart_icon" (click)="openCart(toggleCart)">
       <img src="../../../assets/images/icon-cart.svg" alt="" />
       <div class="cart_quantity" *ngIf="cart.length > 0">

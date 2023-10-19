@@ -2,7 +2,22 @@
   <button class="circle_btn previous_button" (click)="previousPhoto()">
     <img src="../../../assets/images/icon-previous.svg" alt="" />
   </button>
-  <img src="../../..{{ productImages[imageIndex] }}" alt="" />
+  <div>
+    <div>
+      <img
+        class="product_images"
+        src="../../..{{ productImages[imageIndex] }}"
+        alt=""
+        (click)="openImagesModal(true)"
+      />
+    </div>
+    <div class="another_images">
+      <img src="../../../assets/images/image-product-1.jpg" alt="" (mouseover)="changeProductImage(0)"/>
+      <img src="../../../assets/images/image-product-2.jpg" alt="" (mouseover)="changeProductImage(1)"/>
+      <img src="../../../assets/images/image-product-3.jpg" alt="" (mouseover)="changeProductImage(2)"/>
+      <img src="../../../assets/images/image-product-4.jpg" alt="" (mouseover)="changeProductImage(3)"/>
+    </div>
+  </div>
   <button class="circle_btn next_button" (click)="nextPhoto()">
     <img src="../../../assets/images/icon-next.svg" alt="" />
   </button>

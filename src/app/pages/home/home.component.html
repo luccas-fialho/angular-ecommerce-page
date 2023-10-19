@@ -3,7 +3,8 @@
   <app-side-bar (closeClicked)="onClose()" *ngIf="opened"></app-side-bar>
   <div class="container">
     <app-cart *ngIf="cartOpened"></app-cart>
-    <app-product-imgs></app-product-imgs>
+    <app-product-imgs (modalImageClicked)="onOpenImagesModal()"></app-product-imgs>
+    <app-product-infos></app-product-infos>
   </div>
-  <app-product-infos></app-product-infos>
+  <app-imagebox *ngIf="modalImagesOpen" (closedModal)="onModalClosed()"></app-imagebox>
 </div>

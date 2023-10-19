@@ -45,3 +45,69 @@
 .avatar_icon > img {
   height: 1.5rem;
 }
+
+.menu_items__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+
+  .container_menu {
+    margin: 0 200px;
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  .container_menu > ul {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu_items__desktop {
+    display: block;
+    margin-right: 10rem;
+  }
+
+  .menu_items__container {
+    display: flex;
+  }
+
+  .menu_items__container > p {
+    margin-right: 2rem;
+  }
+
+  .menu_items__container > p > a {
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+    font-weight: 400;
+  }
+
+  .menu_items__container > p > a:hover {
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    padding-bottom: 4rem;
+  }
+
+  .cart_icon {
+    margin-left: 10rem;
+    margin-right: 0;
+  }
+
+  .avatar_icon {
+    margin-right: 0;
+  }
+
+  .avatar_icon > img {
+    height: 3.5rem;
+    cursor: pointer;
+  }
+
+  .avatar_icon > img:hover {
+    outline: 2px solid hsl(26, 100%, 55%);
+    border-radius: 30px;
+  }
+}
