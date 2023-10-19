@@ -6,5 +6,5 @@
     <app-product-imgs (modalImageClicked)="onOpenImagesModal()"></app-product-imgs>
     <app-product-infos></app-product-infos>
   </div>
-  <app-imagebox *ngIf="modalImagesOpen" (closedModal)="onModalClosed()"></app-imagebox>
+  <app-imagebox class="image_box" *ngIf="modalImagesOpen" (closedModal)="onModalClosed()"></app-imagebox>
 </div>

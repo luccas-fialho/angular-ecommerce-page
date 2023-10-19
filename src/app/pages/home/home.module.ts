@@ -5,6 +5,7 @@ import { ProductImgsComponent } from 'src/app/components/product-imgs/product-im
 import { ProductInfosComponent } from 'src/app/components/product-infos/product-infos.component';
 import { CartComponent } from 'src/app/components/cart/cart.component';
 import { SideBarComponent } from 'src/app/components/side-bar/side-bar.component';
+import { ImageboxComponent } from 'src/app/components/imagebox/imagebox.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SideBarComponent } from 'src/app/components/side-bar/side-bar.component
     ProductInfosComponent,
     CartComponent,
     SideBarComponent,
+    ImageboxComponent,
   ],
   imports: [CommonModule,],
   exports: [
@@ -21,6 +23,7 @@ import { SideBarComponent } from 'src/app/components/side-bar/side-bar.component
     ProductInfosComponent,
     CartComponent,
     SideBarComponent,
+    ImageboxComponent,
   ],
 })
 export class HomeModule {}

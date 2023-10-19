@@ -37,7 +37,8 @@
 
   .product_images {
     min-width: 375px;
-    border-radius: 20px;
+    max-width: 700px;
+    border-radius: 15px;
     cursor: pointer;
   }
 
@@ -52,8 +53,8 @@
   }
 
   .another_images > img {
-    height: 100px;
-    border-radius: 15px;
+    height: 90px;
+    border-radius: 10px;
     cursor: pointer;
   }
 

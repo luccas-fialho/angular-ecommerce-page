@@ -5,13 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HomeModule } from './pages/home/home.module';
-import { ImageboxComponent } from './components/imagebox/imagebox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ImageboxComponent,
   ],
   imports: [
     BrowserModule,

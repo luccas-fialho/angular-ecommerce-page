@@ -54,7 +54,7 @@
 
   .container_menu {
     margin: 0 200px;
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid hsl(220, 14%, 75%);
   }
 
@@ -89,7 +89,7 @@
 
   .menu_items__container > p > a:hover {
     border-bottom: 4px solid hsl(26, 100%, 55%);
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
 
   .cart_icon {

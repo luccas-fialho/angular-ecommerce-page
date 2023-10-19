@@ -6,12 +6,21 @@
   position: relative;
 }
 
+.image_box {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
+
+  .image_box {
+    display: block;
+  }
+
   .container {
     margin: 0 200px;
     display: flex;
     align-items: flex-start;
-    padding: 7rem 2rem 0 2rem;
+    padding: 7rem 2rem 6rem 2rem;
     justify-content: space-between;
   }
 }
